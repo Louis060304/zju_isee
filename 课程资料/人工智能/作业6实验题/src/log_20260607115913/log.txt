@@ -1,0 +1,20 @@
+2026-06-07 11:59:13,715 - > Arguments:
+2026-06-07 11:59:13,715 - 	criterion: mse
+2026-06-07 11:59:13,716 - 	lr: 0.01
+2026-06-07 11:59:13,716 - 	optimizer: sgd
+2026-06-07 11:59:13,716 - 	use_scheduler: False
+2026-06-07 11:59:13,716 - 	batch_size: 256
+2026-06-07 11:59:13,716 - 	epochs: 3
+2026-06-07 11:59:13,716 - 	checkpoint_dir: ./checkpoint
+2026-06-07 12:10:35,091 - [epoch 1] elapsed time: 681.3463s, train time: 588.5921s, val time: 92.7542s
+2026-06-07 12:10:35,092 - ***** Train_dataset result ***** loss: 0.1107, accuracy 14.94%
+2026-06-07 12:10:35,092 - ***** Val_dataset   result ***** loss: 0.0876, accuracy 20.96%
+2026-06-07 12:22:08,325 - [epoch 2] elapsed time: 693.2093s, train time: 600.6055s, val time: 92.6038s
+2026-06-07 12:22:08,328 - ***** Train_dataset result ***** loss: 0.0872, accuracy 20.32%
+2026-06-07 12:22:08,328 - ***** Val_dataset   result ***** loss: 0.0860, accuracy 23.40%
+2026-06-07 12:34:07,060 - [epoch 3] elapsed time: 718.7123s, train time: 625.7921s, val time: 92.9202s
+2026-06-07 12:34:07,060 - ***** Train_dataset result ***** loss: 0.0842, accuracy 26.90%
+2026-06-07 12:34:07,061 - ***** Val_dataset   result ***** loss: 0.0820, accuracy 36.12%
+2026-06-07 12:35:49,015 -  
+2026-06-07 12:35:49,015 - Elapsed time 00:36:35
+2026-06-07 12:35:49,015 - ***** Test_dataset result ***** loss: 0.0819, accuracy 36.80%

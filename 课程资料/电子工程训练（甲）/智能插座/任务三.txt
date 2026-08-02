@@ -1,0 +1,24 @@
+void loop()
+{
+ // read analog inputs:
+  Sensor0 = getCurrent(0);
+  Sensor1 = getCurrent(1);
+  Sensor2 = getVoltage();
+  Sensor3 = getTemperature();
+
+//以下为增添部分
+if(Sensor2<=4800)//设临界电压为4800mV
+  {
+    digitalWrite(pinLED,HIGH);//点亮
+    }
+  else
+  {
+    digitalWrite(pinLED,LOW);//熄灭，进行警告
+    }
+//以上为增添部分
+
+  // send sensor values:
+
+……
+
+}

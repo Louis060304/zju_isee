@@ -1,0 +1,61 @@
+……
+int getTemperature()
+{
+  uint32_t val = (analog_Read(pinTemp)*16+5)/10;
+
+  // Serial.print("Voltage=");
+  // Serial.println(val,DEC);
+  
+  return val;
+}//以上为原有的代码
+
+//以下为增添的代码
+const int num=20;//采用移动平均法，取20个电流值
+float currentString[num];//用于存储20个电流值
+float avgCurrent=0.0,avgCurrent0=0.0,avgCurrent1=0.0;
+float AvgCurrent(int ch)//该函数用于对所取的电流进行平均运算
+{
+  float value =getCurrent(ch);
+  if(ch==0){
+    avgCurrent0=(avgCurrent0*(num-1)+value)/num;
+    avgCurrent=avgCurrent0;
+  }
+  else if(ch==1)
+  {
+     avgCurrent1=(avgCurrent1*(num-1)+value)/num;
+    avgCurrent=avgCurrent1;
+    }
+    return avgCurrent;
+  }
+//以上为增添的代码
+
+void setup()
+{
+
+……//原有代码
+
+ for(int i=0;i<num;i++)//对平均电流进行初始化
+  {
+    currentString[i]=getCurrent(0);
+    avgCurrent0+=currentString[i];
+    }
+    avgCurrent0/=num;
+     for(int i=0;i<num;i++)
+  {
+    currentString[i]=getCurrent(0);
+    avgCurrent1+=currentString[i];
+    }
+    avgCurrent1/=num;//该部分增添在setup部分的末尾
+}
+
+void loop()
+{
+ // read analog inputs:
+  Sensor0 = AvgCurrent(0);//改动为平均值
+  Sensor1 = AvgCurrent(1);//改动为平均值
+  Sensor2 = getVoltage();
+  Sensor3 = getTemperature();
+
+……//原有代码
+
+}

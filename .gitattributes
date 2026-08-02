@@ -1,0 +1,46 @@
+# 自动检测文本文件，统一使用 LF（防止烦人的警告）
+* text=auto eol=lf
+
+# 明确指定二进制文件（Git 严禁修改它们）
+*.pdf binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.exe binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.rtf binary
+# Office 文档（OOXML/OLE，本质是压缩包，必须按二进制处理）
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+# 音频视频
+*.m4a binary
+*.mp3 binary
+*.wav binary
+*.mp4 binary
+*.avi binary
+*.wmv binary
+# Python、HTML、LaTeX、TXT 等纯文本统一用 LF
+*.py text eol=lf
+*.html text eol=lf
+*.htm text eol=lf
+*.tex text eol=lf
+*.txt text eol=lf
+*.c text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text

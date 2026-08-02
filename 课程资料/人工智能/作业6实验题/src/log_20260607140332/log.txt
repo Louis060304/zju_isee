@@ -1,0 +1,20 @@
+2026-06-07 14:03:32,315 - > Arguments:
+2026-06-07 14:03:32,315 - 	criterion: cross_entropy
+2026-06-07 14:03:32,315 - 	lr: 0.01
+2026-06-07 14:03:32,315 - 	optimizer: sgd
+2026-06-07 14:03:32,315 - 	use_scheduler: False
+2026-06-07 14:03:32,316 - 	batch_size: 64
+2026-06-07 14:03:32,316 - 	epochs: 3
+2026-06-07 14:03:32,316 - 	checkpoint_dir: ./checkpoint
+2026-06-07 14:16:41,453 - [epoch 1] elapsed time: 789.1078s, train time: 688.6276s, val time: 100.4801s
+2026-06-07 14:16:41,454 - ***** Train_dataset result ***** loss: 0.8221, accuracy 69.58%
+2026-06-07 14:16:41,454 - ***** Val_dataset   result ***** loss: 0.4565, accuracy 83.84%
+2026-06-07 14:29:17,681 - [epoch 2] elapsed time: 756.1952s, train time: 656.4359s, val time: 99.7593s
+2026-06-07 14:29:17,682 - ***** Train_dataset result ***** loss: 0.3945, accuracy 85.72%
+2026-06-07 14:29:17,682 - ***** Val_dataset   result ***** loss: 0.3794, accuracy 86.87%
+2026-06-07 14:42:01,684 - [epoch 3] elapsed time: 763.9793s, train time: 663.6470s, val time: 100.3323s
+2026-06-07 14:42:01,685 - ***** Train_dataset result ***** loss: 0.3320, accuracy 88.00%
+2026-06-07 14:42:01,685 - ***** Val_dataset   result ***** loss: 0.3370, accuracy 87.83%
+2026-06-07 14:43:50,892 -  
+2026-06-07 14:43:50,892 - Elapsed time 00:40:18
+2026-06-07 14:43:50,892 - ***** Test_dataset result ***** loss: 0.3572, accuracy 87.22%

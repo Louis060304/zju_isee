@@ -1,0 +1,32 @@
+2026-06-07 15:21:58,581 - > Arguments:
+2026-06-07 15:21:58,581 - 	criterion: mse
+2026-06-07 15:21:58,581 - 	lr: 0.01
+2026-06-07 15:21:58,581 - 	optimizer: sgd
+2026-06-07 15:21:58,582 - 	use_scheduler: False
+2026-06-07 15:21:58,582 - 	batch_size: 256
+2026-06-07 15:21:58,582 - 	epochs: 7
+2026-06-07 15:21:58,582 - 	checkpoint_dir: ./checkpoint
+2026-06-07 15:33:19,491 - [epoch 1] elapsed time: 680.8844s, train time: 587.7750s, val time: 93.1094s
+2026-06-07 15:33:19,491 - ***** Train_dataset result ***** loss: 0.1107, accuracy 14.94%
+2026-06-07 15:33:19,491 - ***** Val_dataset   result ***** loss: 0.0876, accuracy 20.96%
+2026-06-07 15:45:32,913 - [epoch 2] elapsed time: 733.3962s, train time: 633.3404s, val time: 100.0558s
+2026-06-07 15:45:32,914 - ***** Train_dataset result ***** loss: 0.0872, accuracy 20.32%
+2026-06-07 15:45:32,914 - ***** Val_dataset   result ***** loss: 0.0860, accuracy 23.40%
+2026-06-07 16:00:43,488 - [epoch 3] elapsed time: 910.5491s, train time: 786.5540s, val time: 123.9951s
+2026-06-07 16:00:43,489 - ***** Train_dataset result ***** loss: 0.0842, accuracy 26.90%
+2026-06-07 16:00:43,489 - ***** Val_dataset   result ***** loss: 0.0820, accuracy 36.12%
+2026-06-07 16:14:26,975 - [epoch 4] elapsed time: 823.4672s, train time: 726.3252s, val time: 97.1420s
+2026-06-07 16:14:26,976 - ***** Train_dataset result ***** loss: 0.0775, accuracy 40.14%
+2026-06-07 16:14:26,976 - ***** Val_dataset   result ***** loss: 0.0751, accuracy 37.53%
+2026-06-07 16:27:57,857 - [epoch 5] elapsed time: 810.8610s, train time: 660.4938s, val time: 150.3671s
+2026-06-07 16:27:57,857 - ***** Train_dataset result ***** loss: 0.0746, accuracy 44.43%
+2026-06-07 16:27:57,857 - ***** Val_dataset   result ***** loss: 0.0730, accuracy 41.78%
+2026-06-07 16:44:06,441 - [epoch 6] elapsed time: 968.5497s, train time: 865.9290s, val time: 102.6206s
+2026-06-07 16:44:06,441 - ***** Train_dataset result ***** loss: 0.0712, accuracy 49.25%
+2026-06-07 16:44:06,442 - ***** Val_dataset   result ***** loss: 0.0698, accuracy 53.08%
+2026-06-07 16:56:52,017 - [epoch 7] elapsed time: 765.5471s, train time: 662.6653s, val time: 102.8817s
+2026-06-07 16:56:52,018 - ***** Train_dataset result ***** loss: 0.0645, accuracy 59.27%
+2026-06-07 16:56:52,018 - ***** Val_dataset   result ***** loss: 0.0604, accuracy 63.90%
+2026-06-07 17:01:06,144 -  
+2026-06-07 17:01:06,145 - Elapsed time 01:39:07
+2026-06-07 17:01:06,145 - ***** Test_dataset result ***** loss: 0.0603, accuracy 64.13%
